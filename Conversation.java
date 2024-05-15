@@ -24,6 +24,9 @@ class Conversation {
       //String strArray[];
         //String inputArray = new strArray[];
       // pass lines through a new array, print the arry
+      if(user_input.contains("you") && user_input.contains("?")) {
+        this.user_input.replace("you", "I").replace("?", ".");
+      }
       //System.out.println("Transcript:" + )
       //if input contains i:
         //print(f{"you" + input})
