@@ -20,12 +20,21 @@ class Conversation {
       System.out.println("Uh-huh...");
       transcript.add("Uh-huh...");
 
-
+//I -> you
+// me -> you
+// am -> are
+// you -> I
+// my -> your
+// your -> my
       //String strArray[];
         //String inputArray = new strArray[];
       // pass lines through a new array, print the arry
-      if(user_input.contains("you") && user_input.contains("?")) {
-        this.user_input.replace("you", "I").replace("?", ".");
+      if(user_input.contains("you") 
+         && user_input.contains("?")
+         && user_input.contains("me")
+         && user_input.contains("am")
+         && user_input.contains("my")){
+        this.user_input.replace("you", "I").replace("?", ".").replace("am","are").replace("my","your");
       }
       //System.out.println("Transcript:" + )
       //if input contains i:
